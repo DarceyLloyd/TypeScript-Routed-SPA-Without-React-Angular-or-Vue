@@ -28,11 +28,13 @@ composer.lock
 prepros-6.config
 package-lock.json
 
+# Server Files#
+error.log
+access.log
+
 
 # Misc #
 ########
 .old
 backups
-
-
 beta
