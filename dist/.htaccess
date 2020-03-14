@@ -1,0 +1,15 @@
+Options +FollowSymlinks
+Options -Indexes
+RewriteEngine On
+
+#Live
+#Cloud host HTTP TO HTTPS (wont work on non cloud servers)
+#RewriteCond %{HTTP:X-Forwarded-Proto} !https
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule \.(jpg|png|gif|jpeg|bmp|css|js)$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.html?p=$1 [L,QSA]
+# RewriteRule .* /index.html?p=$1 [L,QSA]

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeScript Single Page Application</title>
+    <link rel="stylesheet" href="/includes/css/styles.css">
+    <script src="/includes/js/app.bundle.js"></script>
+</head>
+<body>
+
+<div id="header">
+    <div id="logo">DEV1</div>
+    <ul id="nav">
+        <li>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+        </li>
+    </ul>
+</div>
+
+
+<div id="content-container">
+
+    <div id="home">
+        <h1>Home</h1>
+        <p>How easy it is to make a routed SPA without react, vue or angular!</p>
+        <p>A TypeScript Single Page Application with router - No need for react, vue or angular!</p>
+    </div>
+
+    <div id="about">
+        <h1>About</h1>
+        <p>A TypeScript Single Page Application with router - No need for react, vue or angular!</p>
+    </div>
+
+    <div id="contact">
+        <h1>Contact</h1>
+        <p>The form below doesn't do anything, its for show!</p>
+        <form id="frm" class="frm" onsubmit="return false">
+            <div class="row">
+                <label>Name</label>
+                <input type="text" placeholder="Please enter your name"/>
+            </div>
+            <div class="row">
+                <label>Email</label>
+                <input type="email" placeholder="Please enter your email"/>
+            </div>
+            <div class="row">
+                <button>SUBMIT</button>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+<div id="footer">
+    <div class="inner-pad">
+        &copy; DEV1 LTD 2020
+    </div>
+
+</div>
+
+
+</body>
+</html>
